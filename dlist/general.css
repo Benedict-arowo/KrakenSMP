@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--normal);
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+:root {
+  --normal: "Odibee Sans", cursive;
+  --heading: "Rosario", sans-serif;
+  --normalGradient: linear-gradient(90.1deg, #212736 15.02%, #1B1C16 88.04%);
+  --normalShadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+body {
+  background-image: url("/images/background.png");
+  background-color: rgba(42, 43, 41, 0.5607843137);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+body #overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-animation-name: overlay;
+          animation-name: overlay;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  z-index: 0 !important;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 16px 0;
+  width: 100%;
+}
+header h1 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 120px;
+  color: white;
+  cursor: default;
+}
+main .container #ip {
+  font-size: 2rem;
+  letter-spacing: 0.035rem;
+  line-height: 40px;
+}
+main .container #version {
+  font-size: 1.3rem;
+}
+main .container #ip:hover, main .container #version:hover {
+  transform: scale(1.05);
+}
+main .container .connected {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  font-size: 1.2rem;
+  align-items: center;
+  padding: 16px 8px;
+  width: 256px;
+  justify-content: center;
+  margin-top: 32px;
+  border-radius: 50px;
+  background: var(--normalGradient);
+  box-shadow: var(--normalShadow);
+}
+main .container .connected:hover {
+  transform: scale(1.1);
+}
+main .container #items {
+  margin-top: 128px;
+  display: flex;
+  padding: 16px 8px;
+  gap: 48px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .container #items p {
+  font-size: 1.5rem;
+}
+main .container #items img {
+  max-width: 64px;
+}
+main .container .items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+main .container .items:hover {
+  transform: scale(1.1);
+  color: hsl(342deg, 100%, 18%);
+}
+main .container .itemIcon {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background: var(--normalGradient);
+  box-shadow: var(--normalShadow);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+@-webkit-keyframes overlay {
+  0% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  10% {
+    background-color: rgba(22, 3, 22, 0.199);
+  }
+  20% {
+    background-color: rgba(52, 0, 54, 0.199);
+  }
+  30% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes overlay {
+  0% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  10% {
+    background-color: rgba(22, 3, 22, 0.199);
+  }
+  20% {
+    background-color: rgba(52, 0, 54, 0.199);
+  }
+  30% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}/*# sourceMappingURL=general.css.map */
