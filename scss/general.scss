@@ -15,7 +15,7 @@
 }
 
 body {
-    background-image: url("./images/background.png");
+    background-image: url("../images/background.png");
     background-color: #2a2b298f;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@ body {
     min-height: 100vh;
 
     #overlay {
-        position: absolute;
+        position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
@@ -46,7 +46,12 @@ header {
 
     h1 {
         font-weight: 800;
-        font-size: 3rem;
+        font-size: 3.5rem;
+        cursor: default;
+    }
+    
+    h1:hover {
+        transform: scale(1.2);
     }
 }
 
@@ -57,7 +62,7 @@ main {
         flex-direction: column;
         width: 100%;
         align-items: center;
-        margin-top: 120px;
+        margin-top: 100px;
         color: white;
         cursor: default;
 
@@ -117,11 +122,12 @@ main {
             flex-direction: column;
             align-items: center;
             gap: 8px;
+            cursor: pointer;
         }
 
         .items:hover {
-            transform: scale(1.1);
-            color: hsl(342, 100%, 18%);
+            transform: scale(1.2);
+            color: #ff97b6a4;
         }
 
         .itemIcon {
