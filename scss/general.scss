@@ -30,7 +30,7 @@ body {
         right: 0;
         background-color: rgba(0, 0, 0, 0.2);
         animation-name: overlay;
-        animation-duration: 10s;
+        animation-duration: 6s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
         z-index: 0 !important;
@@ -150,11 +150,11 @@ main {
     }
 
     10% {
-        background-color: rgba(22, 3, 22, 0.199);
+        background-color: rgba(22, 3, 22, 0.3);
     }
 
     20% {
-        background-color: rgba(52, 0, 54, 0.199);
+        background-color: rgba(52, 0, 54, 0.3);
     }
 
     30% {
